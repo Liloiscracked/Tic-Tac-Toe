@@ -12,7 +12,8 @@ app.get("/",(req,res)=>{
     res.set({
         "Allow-access-Allow-Origin": '*'
     })
-    return res.redirect('src/index.html');
+    res.send("hola");
+    //return res.redirect('src/index.html');
 }).listen(3000);
 
 
